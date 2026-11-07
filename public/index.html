@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#d9f1ff" />
+  <meta name="description" content="A little sky-blue birthday surprise for Mush: a personal voice note, a song, a heartfelt letter, photos, and videos." />
+  <meta property="og:title" content="Happy Birthday, Mush! 💙" />
+  <meta property="og:description" content="Someone made you a little corner of the internet. Open your birthday surprise!" />
+  <meta property="og:type" content="website" />
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <title>Happy Birthday, Mush! · A Sky Full of Wishes 💙</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./site-config.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <span class="cloud cloud-one"></span>
+    <span class="cloud cloud-two"></span>
+    <span class="cloud cloud-three"></span>
+    <span class="cloud cloud-four"></span>
+    <span class="twinkle twinkle-one">✦</span>
+    <span class="twinkle twinkle-two">✧</span>
+    <span class="twinkle twinkle-three">✦</span>
+  </div>
+
+  <div class="page-shell">
+    <header class="masthead">
+      <a class="wordmark" href="#home" aria-label="Back to top"><span aria-hidden="true">✉</span> mush’s little sky</a>
+      <span class="edition" id="date-label">The birthday edition <span aria-hidden="true">✳</span></span>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="main-title">
+        <div class="hero-copy">
+          <span class="pill"><span class="pill-dot"></span> A little birthday magic, just for you</span>
+          <p class="handwritten hero-preface">psst... this whole sky is for you ♡</p>
+          <h1 id="main-title">Happy birthday, <em>Mush</em><span class="period">.</span></h1>
+          <p class="hero-text">Your very own corner of the internet: a voice message, a birthday song, a letter from an old friend, and a few little moments worth keeping. The sky is yours today. 💙</p>
+          <div class="hero-actions">
+            <button class="button button-primary" id="open-surprise" type="button">Unwrap your surprise <span aria-hidden="true">↗</span></button>
+            <a class="text-link" href="#letter">Read your letter <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-halo halo-one"></div><div class="hero-halo halo-two"></div>
+          <div class="balloon balloon-left"><span></span></div>
+          <div class="balloon balloon-right"><span></span></div>
+          <div class="portrait-stack"><figure class="portrait-frame portrait-front"><img src="./media/mush-portrait.jpg" alt="" fetchpriority="high" /><figcaption>today is all about you ✦</figcaption></figure><figure class="portrait-frame portrait-back"><img src="./media/mush-hoodie.jpg" alt="" /><figcaption>our birthday star ♡</figcaption></figure></div>
+          <span class="orbit-star star-a">✧</span><span class="orbit-star star-b">✦</span><span class="orbit-star star-c">✽</span>
+          <div class="postmark">MADE<br />FOR<br />YOU <span>♡</span></div>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"><span>✦</span><span>✧</span><span>✦</span></div>
+
+      <section class="audio-section section-surface" id="listen" aria-labelledby="listen-title">
+        <div class="section-intro">
+          <span class="eyebrow">01 / a little sound of love</span>
+          <h2 id="listen-title">But first, <em>listen</em> 🎧</h2>
+          <p>First, a voice message from an old friend. Then a birthday song, just like promised. 🎶</p>
+        </div>
+        <div class="audio-card">
+          <div class="vinyl-wrap" aria-hidden="true"><div class="vinyl"><span>for you<br />♡</span></div></div>
+          <div class="audio-details">
+            <div class="track-label"><span class="track-indicator"></span> A birthday message, just for you</div>
+            <h3 id="audio-title">A voice note &amp; your birthday song</h3>
+            <p id="audio-status" role="status" aria-live="polite">Press play to hear your birthday message, followed by the song. 🎧</p>
+            <div class="audio-actions">
+              <button class="button button-dark" id="play-audio" type="button" disabled><span id="play-icon" aria-hidden="true">▶</span> <span id="play-label">Play the message</span></button>
+              <button class="quiet-button" id="restart-audio" type="button" hidden>↺ Start again</button>
+            </div>
+            <audio id="intro-audio" preload="metadata"></audio>
+            <div class="audio-timeline" aria-hidden="true"><span class="track-played" id="track-played"></span></div>
+            <div class="audio-timestamps"><span id="elapsed">0:00</span><span id="duration">1:38</span></div>
+            <p class="audio-sequence"><span>🎙️ Your message</span><span aria-hidden="true">→</span><span>🎵 Birthday song</span></p>
+          </div>
+        </div>
+        <p class="mini-note" id="audio-note">One tap starts the whole surprise: the voice note plays first, then the music. You’re always in control.</p>
+      </section>
+
+      <section class="letter-section" id="letter" aria-labelledby="letter-title">
+        <div class="section-intro centered">
+          <span class="eyebrow">02 / words from the heart</span>
+          <h2 id="letter-title">A letter for <em>Mush</em> 💌</h2>
+          <p>Some people are worth celebrating with more than just two words.</p>
+        </div>
+        <article class="letter-paper">
+          <div class="letter-stamp" aria-hidden="true">with<br />love ♡</div>
+          <p class="handwritten dear">Dear Mush,</p>
+          <div class="letter-copy" id="letter-copy">
+            <p>Happy Birthday! 🥳</p>
+            <p>From our early days back at Madrasa to reconnecting again recently, I’m truly glad we stayed in touch. Even though we only started talking again not too long ago, it’s been so refreshing catching up with you.</p>
+            <p>As you celebrate another year today, I want to wish you nothing but the absolute best. May this new age bring you immense barakah, sound health, genuine peace of mind, and continuous growth in everything you set your hands to do. I pray that Allah opens doors of ease, success, and unending opportunities for you this year and in all the years ahead.</p>
+            <p>May your days be filled with happiness, long life, and prosperity. Enjoy your special day to the fullest—you truly deserve it! ✨</p>
+          </div>
+          <div class="letter-signoff"><span>With all the best wishes,</span><strong id="signature">Your old Madrasa friend ♡</strong></div>
+        </article>
+      </section>
+
+      <section class="gallery-section section-surface" id="memories" aria-labelledby="gallery-title">
+        <div class="section-intro gallery-heading">
+          <div><span class="eyebrow">03 / our little memory lane</span><h2 id="gallery-title">Moments &amp; <em>memories</em> 📸</h2></div>
+          <p>A little lookbook of you, because today belongs to the birthday boy. ✦</p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid" aria-live="polite">
+          <div class="empty-memory memory-a"><span class="memory-illustration" aria-hidden="true">☁</span><span>the lovely moments</span><small>pictures will appear here</small></div>
+          <div class="empty-memory memory-b"><span class="memory-illustration" aria-hidden="true">✦</span><span>the unforgettable smiles</span><small>videos will appear here</small></div>
+          <div class="empty-memory memory-c"><span class="memory-illustration" aria-hidden="true">♡</span><span>the memories we keep</span><small>more magic coming soon</small></div>
+        </div>
+      </section>
+
+      <section class="last-wish" aria-labelledby="last-title">
+        <div class="last-icon" aria-hidden="true">🎈</div>
+        <span class="eyebrow">one last thing...</span>
+        <h2 id="last-title">Make a wish. <em>Then make another.</em></h2>
+        <p>Here's to laughter, answered prayers, beautiful beginnings, and a whole year of reasons to smile.</p>
+        <button class="button button-primary" id="more-confetti" type="button">A little more birthday magic <span aria-hidden="true">✺</span></button>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>Made for Mush, with ♡ and a sky full of wishes</span><a href="#home">Back to the clouds ↑</a></footer>
+  </div>
+  <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+</body>
+</html>

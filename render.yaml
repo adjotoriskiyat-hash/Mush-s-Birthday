@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: mush-s-birthday
+    runtime: static
+    buildCommand: echo "Ready for Mush's birthday"
+    staticPublishPath: ./public
+    autoDeployTrigger: commit
