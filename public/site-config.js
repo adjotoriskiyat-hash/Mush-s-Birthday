@@ -2,7 +2,7 @@
 window.BIRTHDAY_SITE = {
   recipientName: "Mush",
   dateLabel: "For Mush · with all the birthday love ✳",
-  signature: "From رزقيات ♡",
+  signature: "From رزقية ♡",
   message: [
     "Happy Birthday, Mush! 🥳💙",
     "From our early days back at Madrasa to reconnecting again recently, I’m truly glad we stayed in touch. Even though we only started talking again not too long ago, it’s been so refreshing catching up with you.",
