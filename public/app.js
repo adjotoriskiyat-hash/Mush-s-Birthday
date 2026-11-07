@@ -6,7 +6,7 @@
 
   // Configure copy safely with textContent, never user-supplied HTML.
   if (config.recipientName && typeof config.recipientName === "string") {
-    document.title = `Happy Birthday, ${config.recipientName.trim()} · A Sky Full of Wishes`;
+    document.title = `Happy Birthday, ${config.recipientName.trim()} 💙`;
   }
   if (config.dateLabel) $("date-label").textContent = config.dateLabel;
   if (config.signature) $("signature").textContent = config.signature;
